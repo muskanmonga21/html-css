@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .el-1{
+            background-color: coral;
+        }
+        .el-2{
+            background-color: rgb(214, 255, 80);
+        }
+        .el-3{
+            background-color: cornflowerblue;
+        }
+        .el-4{
+            background-color: cyan;
+            height: 150px;
+        }
+        .el-5{
+            background-color: cadetblue;
+        }
+        .el-6{
+            background-color: crimson;
+        }
+        .el-7{
+            background-color: orchid;
+        }
+        .el-8{
+            background-color: olivedrab;
+        }
+        .container{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: #ddd;
+            font-size: 34px;
+            margin: 40px;
+             /* flexbox */
+             display: flex;
+             align-items:center;
+             justify-content: flex-start;s
+             gap: 40px;
+             /* flex-direction: row-reverse; */
+        }
+        .el{
+            /* margin-right: 30px; */
+        }
+        .el-1{
+            align-self: flex-start;
+            /* order: 2; */
+        }
+        .el-5{
+            align-self: stretch;
+        }
+        .el-7{
+            /* order: 1; */
+        }
+        .el-8{
+            /* order: -1; */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="el el-1">HTML</div>
+        <div class="el el-2">and</div>
+        <div class="el el-3">CSS</div>
+        <div class="el el-4">are</div>
+        <div class="el el-5">Amazing</div>
+        <div class="el el-6">Language</div>
+        <div class="el el-7">to</div>
+        <div class="el el-8">learn</div>
+    </div>
+</body>
+</html>
